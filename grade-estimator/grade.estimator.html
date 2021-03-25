@@ -1,0 +1,40 @@
+<script>
+
+    grade = parseInt( prompt("Your grade please: ") )
+    // HW2:
+    // what would result
+    // parseInt ( 9.9 )  = 9 !!!
+    // parseInt ( 9.1 )  = 9 !!!
+    // parseInt ( 9.5 )  = 9 !!!
+    // parseInt ( 9.59 ) = 9 !!!
+
+    LimitVB = 4 || 3 || 2 || 1
+    LimitB  = 6 || 5
+    LimitG  = 8 || 7
+    LimitVG = 9
+    LimitEX = 10
+
+    // 1..4 - VEERY BAD
+    // 5..6 - BAD
+    // 7..8 - GOOD
+    // 9    - VEERY GOOG
+    // 10   - EXCELLENT
+    
+    //HW3:
+    if ( grade > LimitEX ) {
+        alert("Sorry max grade is 10!!!")
+    } else if ( grade > LimitVG ) {
+        alert("EXCELLENT")
+    } else if ( grade > LimitG ) {
+        alert("VERRY GOOD")
+    } else if ( grade > LimitB ) {
+        alert("GOOD")
+    } else if ( grade > LimitVB ) {
+        alert("BAD")
+    } else {
+        alert("VERRY BAD")
+    }
+
+    // Cu greu dar mam priceput :) !!!
+
+</script>
