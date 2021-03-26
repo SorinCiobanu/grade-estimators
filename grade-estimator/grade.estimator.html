@@ -7,11 +7,11 @@
     // parseInt ( 9.1 )  = 9 !!!
     // parseInt ( 9.5 )  = 9 !!!
     // parseInt ( 9.59 ) = 9 !!!
-    LimitNone = 0
-    LimitVB = 4 && 3 && 2 && 1
-    LimitB  = 6 && 5
-    LimitG  = 8 && 7
-    LimitVG = 9
+    //LimitNone = 0
+    //LimitVB = 4 && 3 && 2 && 1
+    //LimitB  = 6 && 5
+    //LimitG  = 8 && 7
+    //LimitVG = 9
     LimitEX = 10
 
     // 1..4 - VEERY BAD
@@ -23,15 +23,15 @@
     //HW3:
     if ( grade > LimitEX ) {
         alert("Sorry max grade is 10!!!")
-    } else if ( grade > LimitVG ) {
+    } else if ( grade > LimitEX - 1 ) { // >9 = 10
         alert("EXCELLENT")
-    } else if ( grade > LimitG ) {
+    } else if ( grade > LimitEX - 2 ) { // > 8 = 9
         alert("VERRY GOOD")
-    } else if ( grade > LimitB ) {
+    } else if ( grade > LimitEX - 4 ) { // >6 = 7 || 8
         alert("GOOD")
-    } else if ( grade > LimitVB ) {
+    } else if ( grade > LimitEX - 6 ) { // >4 = 5 || 6
         alert("BAD")
-    } else if (grade > LimitNone) {
+    } else if ( grade > LimitEX - 10) {  // >0 = 1 || 2 || 3 || 4
         alert("VERRY BAD")
     } else {
         alert("Sorry min grade is 1!!!")
