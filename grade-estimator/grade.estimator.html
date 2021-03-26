@@ -7,10 +7,10 @@
     // parseInt ( 9.1 )  = 9 !!!
     // parseInt ( 9.5 )  = 9 !!!
     // parseInt ( 9.59 ) = 9 !!!
-
-    LimitVB = 4 || 3 || 2 || 1
-    LimitB  = 6 || 5
-    LimitG  = 8 || 7
+    LimitNone = 0
+    LimitVB = 4 && 3 && 2 && 1
+    LimitB  = 6 && 5
+    LimitG  = 8 && 7
     LimitVG = 9
     LimitEX = 10
 
@@ -31,8 +31,10 @@
         alert("GOOD")
     } else if ( grade > LimitVB ) {
         alert("BAD")
-    } else {
+    } else if (grade > LimitNone) {
         alert("VERRY BAD")
+    } else {
+        alert("Sorry min grade is 1!!!")
     }
 
     // Cu greu dar mam priceput :) !!!
